@@ -2468,6 +2468,14 @@ common_params_context common_params_parser_init(common_params & params, llama_ex
         }
     ).set_examples(mmproj_examples).set_env("LLAMA_ARG_MMPROJ_OFFLOAD"));
     add_opt(common_arg(
+        {"--mmproj-backend"}, "BACKEND",
+        "Backend to use for the multimodal projector only (e.g. cpu, cuda, vulkan, metal). "
+        "Does not affect the base model backend.",
+        [](common_params & params, const std::string & value) {
+            params.mmproj_backend = value;
+        }
+    ).set_examples(mmproj_examples));
+    add_opt(common_arg(
         {"--image", "--audio", "--video"}, "FILE",
         "path to an image, audio, or video file. use with multimodal models, use comma-separated values for multiple files\n",
         [](common_params & params, const std::string & value) {

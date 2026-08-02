@@ -1,0 +1,2 @@
+.\build\bin\Release\llama-mtmd-cli.exe --help | Select-String "mmproj-backend"
+    --mmproj-backend BACKEND                Backend to use for the multimodal projector only (e.g. cpu, cuda,
