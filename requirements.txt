@@ -1,0 +1,10 @@
+torch
+transformers
+huggingface_hub
+sentencepiece
+protobuf
+safetensors
+numpy
+psutil
+ipython
+rich

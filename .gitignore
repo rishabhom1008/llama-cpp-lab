@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code
+.vscode/
+
+# Build output
+llama.cpp/build/
+llama.cpp/cmake-build-*/
+
+# Generated CMake files
+llama.cpp/CMakeCache.txt
+llama.cpp/CMakeFiles/
+llama.cpp/cmake_install.cmake
+llama.cpp/compile_commands.json
+
+# Models
+models/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.bak

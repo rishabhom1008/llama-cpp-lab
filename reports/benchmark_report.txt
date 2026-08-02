@@ -1,0 +1,26 @@
+LLAMA.CPP BENCHMARK REPORT
+============================================================
+
+Prompt 1
+----------------------------------------
+Input Prompt         : What is bitcoin?
+First Token Latency  : 54825.49 ms
+Prompt Speed         : 4.60 t/s
+Generation Speed     : 12.40 t/s
+Peak RAM Usage       : 10826.33 MB
+
+Prompt 2
+----------------------------------------
+Input Prompt         : Write a Python function to reverse a list.
+First Token Latency  : 65421.53 ms
+Prompt Speed         : 6.60 t/s
+Generation Speed     : 12.10 t/s
+Peak RAM Usage       : 10155.98 MB
+
+============================================================
+AVERAGES
+============================================================
+Average TTFT         : 60123.51 ms
+Average Prompt Speed : 5.60 t/s
+Average Gen Speed    : 12.25 t/s
+Peak RAM Usage       : 10826.33 MB
