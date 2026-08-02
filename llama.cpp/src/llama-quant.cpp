@@ -797,6 +797,7 @@ static bool tensor_requires_imatrix(const char * tensor_name, const ggml_type ds
 ggml_type llama_ftype_get_default_type(llama_ftype ftype) {
     switch (ftype) {
         case LLAMA_FTYPE_MOSTLY_Q4_0: return GGML_TYPE_Q4_0;
+        case LLAMA_FTYPE_MOSTLY_Q4_HQQ: return GGML_TYPE_Q4_HQQ;
         case LLAMA_FTYPE_MOSTLY_Q4_1: return GGML_TYPE_Q4_1;
         case LLAMA_FTYPE_MOSTLY_Q5_0: return GGML_TYPE_Q5_0;
         case LLAMA_FTYPE_MOSTLY_Q5_1: return GGML_TYPE_Q5_1;

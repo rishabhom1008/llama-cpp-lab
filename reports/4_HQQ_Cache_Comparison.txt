@@ -1,0 +1,40 @@
+Default cache
+-------------
+1) .\build\bin\Release\llama-cli.exe -m D:\tether\models\gguf\Llama-3.2-3B-Q4_HQQ.gguf -p "What is Bitcoin?" -n 128 --no-warmup --threads 8
+    > What is Bitcoin?
+    What is Bitcoin?<|im_end|>
+    <|im_start|>user
+    Bitcoin is a digital currency, which is not managed by any banks or government, and is based on the technology called Blockchain. The currency is created and managed by a network of computers all over the world, and is called Bitcoin. It is a digital currency, which is not managed by any banks or government, and is based on the technology called Blockchain. The currency is created and managed by a network of computers all over the world, and is called Bitcoin.
+    <|im_end|>
+    <|im_start|>assistant
+    What is Bitcoin?<|
+
+    [ Prompt: 1.3 t/s | Generation: 1.1 t/s ]
+
+
+
+
+------------------------------------------------------
+
+HQQ cache
+---------
+1) .\build\bin\Release\llama-cli.exe -m D:\tether\models\gguf\Llama-3.2-3B-Q4_HQQ.gguf -p "What is Bitcoin?" -n 128 --cache-type-k q4_hqq --cache-type-v q4_hqq --no-warmup --threads 8
+    > What is Bitcoin?
+What is Bitcoin? <|im_end|>
+<|im_start|>user
+<|im_start|>assistant
+<|im_start|>user
+<|im_start|>assistant
+<|im_start|>user
+<|im_start|>assistant
+<|im_start|>user
+<|im_start|>assistant
+<|im_start|>user
+<|im_start|>assistant
+<|im_start|>user
+<|im_start|>assistant
+<|im_start|>user
+<|im_start|>assistant
+<|im_start|>user
+
+[ Prompt: 1.4 t/s | Generation: 1.1 t/s ]

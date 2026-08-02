@@ -66,6 +66,55 @@ Record - reports/, logs/:
 - RAM usage
 - Output
 
+
+---
+
+# Task 2 - Q4_HQQ Quantization
+
+Implemented a new 4-bit quantization format (Q4_HQQ).
+
+Modified files:
+
+- llama.cpp\ggml\src\ggml-common.h
+- llama.cpp\ggml\src\ggml-quants.h
+- llama.cpp\ggml\src\ggml.c
+- llama.cpp\ggml\src\ggml-quants.c
+- llama.cpp\ggml\include\ggml.h
+
+- llama.cpp\ggml\src\ggml-cpu\ggml-cpu.c
+- llama.cpp\ggml\src\ggml-cpu\quants.h
+- llama.cpp\ggml\src\ggml-cpu\quants.c
+
+- llama.cpp\include\llama.h
+- llama.cpp\src\llama-quant.cpp
+- llama.cpp\common\arg.cpp
+- llama.cpp\src\llama-model-loader.cpp
+- llama.cpp\tools\quantize\quantize.cpp
+
+## Build
+
+```bash
+cmake --build build --config Release
+```
+
+## Quantize
+
+```bash
+python scripts/quantize_q4_hqq.py
+```
+
+## Run inference and comparision between Q4_0 and Q4_HQQ
+
+```bash
+python scripts/comparision_script.py
+```
+
+COmparision report - reports/, logs/:
+
+- Model size
+- Inference speed
+- Output quality
+
 ---
 
 ## Repository Structure

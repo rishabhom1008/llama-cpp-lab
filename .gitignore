@@ -20,9 +20,6 @@ llama.cpp/compile_commands.json
 # Models
 models/
 
-# Logs
-*.log
-
 # OS
 .DS_Store
 Thumbs.db
